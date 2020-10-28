@@ -1,0 +1,39 @@
+{
+  "PWA Studio Component": {
+    "prefix": "pwa-comp",
+    "description": "PWA Studio component",
+    "body": [
+      "import React from 'react';",
+      "import {mergeClasses} from '@magento/venia-ui/lib/classify';",
+      "import {shape, string} from 'prop-types';",
+      "",
+      "import defaultClasses from './$TM_FILENAME_BASE.css';",
+      "",
+      "const ${2:Name} = props => {",
+      "    const classes = mergeClasses(defaultClasses, props.classes);",
+      "    return (<div className={classes.root}></div>);",
+      "}",
+      "",
+      "${2:Name}.propTypes = {",
+      "    classes: shape({root: string})",
+      "};",
+      "${2:Name}.defaultProps = {};",
+      "export default ${2:Name};"
+    ]
+  },
+  "PWA Studio Snapshot Test": {
+    "prefix": "pwa-snap-test",
+    "description": "PWA Studio snapshot test",
+    "body": [
+      "import React from 'react';",
+      "import { createTestInstance } from '@magento/peregrine';",
+      "",
+      "jest.mock('../../../classify');",
+      "",
+      "test('it renders', () => {",
+      "    const instance = createTestInstance(<div></div>);",
+      "    expect(instance.toJSON()).toMatchSnapshot();",
+      "}"
+    ]
+  }
+}

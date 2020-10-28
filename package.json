@@ -1,0 +1,30 @@
+{
+  "name": "vscode-pwa-studio",
+  "publisher": "larsroettig",
+  "displayName": "PWA Studio Snippets",
+  "description": "Magento PWA Studio snippets by Lars Roettig",
+  "version": "1.0.0",
+  "keywords": [
+    "Magento 2",
+    "PWA Studio"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1f39ff",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      }
+    ]
+  }
+}
