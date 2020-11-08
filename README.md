@@ -1,4 +1,7 @@
 # Magento PWA Studio Snippets for VS Code
+[![Version](https://img.shields.io/visual-studio-marketplace/v/larsroettig.vscode-pwa-studio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/larsroettig.vscode-pwa-studio?style=for-the-badge) 
+[![Installs](https://img.shields.io/visual-studio-marketplace/d/larsroettig.vscode-pwa-studio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/larsroettig.vscode-pwa-studio?style=for-the-badge)  
+
 
 This extension for Visual Studio Code adds snippets for Magento PWA Studio.
 
