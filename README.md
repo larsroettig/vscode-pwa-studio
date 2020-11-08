@@ -48,9 +48,9 @@ For development you open the cloned directory and press `F5` then VS-Code open n
 | `pwa-test` `pwat`              | Snapshot test based on jest |
 | `pwa-test-case` `pwatc` | Simple Jest Testcase for snapshot            |
 | `pwa-test-lib` `pwatl`  | Snapshot test based on react testing library |
-| `pwa-export-default`, `pwaed` | Default export for index |
+| `pwa-export-default` `pwaed` | Default export for index |
 | `pwa-route`  `pwaro` | Venia-UI route target |
 | `pwa-route-sub`  `pwaros` | Venia-UI route child target |
-| `pwa-rich-con` `pwarc         | Venia-UI rich content renderer target        |
+| `pwa-rich-con` `pwarc`| Venia-UI rich content renderer target        |
 | `pwa-hook` `pwah` | Peregrine hook target |
 | `pwa-hook-sub` `pwahs` | Peregrine hook target sub |
