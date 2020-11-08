@@ -1,6 +1,6 @@
 # Magento PWA Studio Snippets for VS Code
-[![Version](https://img.shields.io/visual-studio-marketplace/v/larsroettig.vscode-pwa-studio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/larsroettig.vscode-pwa-studio?style=for-the-badge) 
-[![Installs](https://img.shields.io/visual-studio-marketplace/d/larsroettig.vscode-pwa-studio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/larsroettig.vscode-pwa-studio?style=for-the-badge)  
+[![Version](https://img.shields.io/visual-studio-marketplace/v/larsroettig.vscode-pwa-studio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/larsroettig.vscode-pwa-studio?style=for-the-badge)
+[![Installs](https://img.shields.io/visual-studio-marketplace/d/larsroettig.vscode-pwa-studio?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/larsroettig.vscode-pwa-studio?style=for-the-badge)
 
 
 This extension for Visual Studio Code adds snippets for Magento PWA Studio.
@@ -38,9 +38,20 @@ Depending on your platform it is located in the following folders:
 git clone git@github.com:larsroettig/vscode-pwa-studio.git
 ```
 
-### JavaScript Snippets
+For development you open the cloned directory and press `F5` then VS-Code open new Window with the loaded extension.
+
+### PWA Studio Snippets
 
 | Snippet                      | Purpose                                                              |
 | ---------------------------- | -------------------------------------------------------------------- |
-| `pwa-comp`                | component                                                            |
-| `pwa-snap-test`                | snapshot test                                                        |
+| `pwa-comp`, `pwac`                 |  Simple function component |
+| `pwa-test`,`pwat`              | Snapshot test based on jest |
+| `pwa-test-case`,`pwatc` | Simple Jest Testcase for snapshot            |
+| `pwa-test-lib`,`pwatl`  | Snapshot test based on react testing library |
+| `pwa-export-default`, `pwaed` | Default export for index |
+| `pwa-route`, `pwaro` | Venia-UI route target |
+| `pwa-route-sub`, `pwaros` | Venia-UI route child target |
+| `pwa-rich-con`,`pwarc         | Venia-UI rich content renderer target        |
+| `pwa-hook`,`pwah` | Peregrine hook target |
+| `pwa-hook-sub`,`pwahs` | Peregrine hook target sub |
+

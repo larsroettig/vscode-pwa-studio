@@ -1,39 +1,127 @@
 {
-  "PWA Studio Component": {
-    "prefix": "pwa-comp",
-    "description": "PWA Studio component",
-    "body": [
-      "import React from 'react';",
-      "import {mergeClasses} from '@magento/venia-ui/lib/classify';",
-      "import {shape, string} from 'prop-types';",
-      "",
-      "import defaultClasses from './$TM_FILENAME_BASE.css';",
-      "",
-      "const ${2:Name} = props => {",
-      "    const classes = mergeClasses(defaultClasses, props.classes);",
-      "    return (<div className={classes.root}></div>);",
-      "}",
-      "",
-      "${2:Name}.propTypes = {",
-      "    classes: shape({root: string})",
-      "};",
-      "${2:Name}.defaultProps = {};",
-      "export default ${2:Name};"
-    ]
-  },
-  "PWA Studio Snapshot Test": {
-    "prefix": "pwa-snap-test",
-    "description": "PWA Studio snapshot test",
-    "body": [
-      "import React from 'react';",
-      "import { createTestInstance } from '@magento/peregrine';",
-      "",
-      "jest.mock('../../../classify');",
-      "",
-      "test('it renders', () => {",
-      "    const instance = createTestInstance(<div></div>);",
-      "    expect(instance.toJSON()).toMatchSnapshot();",
-      "}"
-    ]
-  }
+   "PWA Studio Component":{
+      "prefix":"pwa-comp",
+      "description":"PWA Studio component",
+      "body":[
+         "import React from 'react';",
+         "import {mergeClasses} from '@magento/venia-ui/lib/classify';",
+         "import {shape, string} from 'prop-types';",
+         "",
+         "import defaultClasses from './$TM_FILENAME_BASE.css';",
+         "",
+         "const ${2:Name} = props => {",
+         "    const classes = mergeClasses(defaultClasses, props.classes);",
+         "    return (<div className={classes.root}></div>);",
+         "}",
+         "",
+         "${2:Name}.propTypes = {",
+         "    classes: shape({root: string})",
+         "};",
+         "${2:Name}.defaultProps = {};",
+         "export default ${2:Name};"
+      ]
+   },
+   "PWA Studio Snapshot Test":{
+      "prefix":"pwa-test",
+      "description":"PWA Studio snapshot test",
+      "body":[
+         "import React from 'react';",
+         "import { createTestInstance } from '@magento/peregrine';",
+         "",
+         "jest.mock('../../../classify');",
+         "",
+         "test('it renders', () => {",
+         "    const instance = createTestInstance(<div></div>);",
+         "    expect(instance.toJSON()).toMatchSnapshot();",
+         "}"
+      ]
+   },
+   "PWA Studio Test case ":{
+      "prefix":"pwa-test-case",
+      "description":"PWA Studio snapshot test child",
+      "body":[
+         "test('${2:Name}', () => {",
+         "    const instance = createTestInstance(<div></div>);",
+         "    expect(instance.toJSON()).toMatchSnapshot();",
+         "}"
+      ]
+   },
+   "PWA Studio React Testing Libary":{
+      "prefix":"pwa-test-lib",
+      "description":"PWA Studio React Testing Libary",
+      "body":[
+         "import React from 'react';",
+         "import {render} from '@testing-library/react';",
+         "",
+         "jest.mock('@magento/venia-ui/lib/classify');",
+         "",
+         "test('it renders', () => {",
+         "    const {asFragment} = render(<div></div>);",
+         "    expect(asFragment()).toMatchSnapshot();",
+         "}"
+      ]
+   },
+    "PWA Component Export":{
+      "prefix":"pwa-export-default",
+      "description":"PWA Studio default export",
+      "body":[
+         "export { default } from './${1:filename}';"
+      ]
+   },
+   "PWA Studio Routs":{
+      "prefix":"pwa-route",
+      "description":"PWA Studio Route",
+      "body":[
+         "targets.of('@magento/venia-ui').routes.tap(",
+         "  routesArray => {",
+         "     routesArray.push({",
+         "         name: '${1:Name}',",
+         "         pattern: '${2:/route}',",
+         "         path: '${3:@partner/route}'",
+         "     });",
+         "",
+         "     return routesArray;",
+         "  });"
+      ]
+   },
+   "PWA Studio Routs Sub":{
+      "prefix":"pwa-route-sub",
+      "description":"PWA Studio Route Sub",
+      "body":[
+         "routesArray.push({",
+         "     name: '${1:Name}',",
+         "     pattern: '${2:/route}',",
+         "     path: '${3:@partner/route}'",
+         "});"
+      ]
+   },
+   "PWA Studio hooks Target":{
+      "prefix":"pwa-hook",
+      "description":"PWA Studio peregrine hook Target",
+      "body":[
+         "targets.of('@magento/peregrine').hooks.tap(",
+         "  hooks => {",
+         "    hooks.${1:useHook}.wrapWith('${2:$@my-extensions/log-wrapper}');",
+         "  });"
+      ]
+   },
+   "PWA Studio hooks target sub":{
+      "prefix":"pwa-hook-sub",
+      "description":"PWA Studio peregrine hook Target",
+      "body":[
+         "    hooks.${1:useHook}.wrapWith('${2:$@my-extensions/log-wrapper}');"
+      ]
+   },
+   "PWA Studio Content Renderer":{
+      "prefix":"pwa-rich-con",
+      "description":"PWA Studi Rich Content Renderer",
+      "body":[
+         "targets.of('@magento/venia-ui').richContentRenderers.tap(",
+         "    renderers => renderers.add({",
+         "        componentName: '${2:Name}',",
+         "        importPath: '@adobe/xm-components/xm-renderer'",
+         "    })",
+         ");"
+      ]
+   }
 }
