@@ -33,7 +33,7 @@
          "test('it renders', () => {",
          "    const instance = createTestInstance(<div></div>);",
          "    expect(instance.toJSON()).toMatchSnapshot();",
-         "}"
+         "});"
       ]
    },
    "PWA Studio Test case ":{
@@ -43,7 +43,7 @@
          "test('${2:Name}', () => {",
          "    const instance = createTestInstance(<div></div>);",
          "    expect(instance.toJSON()).toMatchSnapshot();",
-         "}"
+         "});"
       ]
    },
    "PWA Studio React Testing Libary":{
@@ -58,7 +58,7 @@
          "test('it renders', () => {",
          "    const {asFragment} = render(<div></div>);",
          "    expect(asFragment()).toMatchSnapshot();",
-         "}"
+         "});"
       ]
    },
     "PWA Component Export":{
