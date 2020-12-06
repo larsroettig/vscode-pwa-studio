@@ -3,12 +3,12 @@
   "publisher": "larsroettig",
   "displayName": "PWA Studio Snippets",
   "description": "Magento PWA Studio snippets by Lars Roettig",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "keywords": [
     "Magento 2",
     "PWA Studio"
   ],
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/larsroettig/vscode-pwa-studio.git"
   },
